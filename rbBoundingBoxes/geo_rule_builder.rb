@@ -287,7 +287,7 @@ class GeoRuleBuilder
                     rule = "#{rule_base} (#{clause}"
                     empty_rule = false
                 end
-                current_buffer = current_buffer - clause.length
+                current_buffer = starting_buffer - rule.length
 
                 if i == num_of_clauses then
                     rule = "#{rule}) ".strip!
